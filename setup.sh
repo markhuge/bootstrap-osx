@@ -82,6 +82,7 @@ echo "Checking dnscrypt..."
     echo "$dnscrypt_check"
   else
     echo "dnscrypt failed! EXITING"
+    echo "Try rebooting and run again. dnscrypt service is a little flaky the first time"
     exit 1
   fi
 ## Openssl ##
