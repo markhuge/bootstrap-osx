@@ -25,7 +25,7 @@ brew cask install little-snitch # I own a license. Change based on your prefs
 
  ## Docker ##
 brew Cask install docker
-
+read -n1 -r -p '[30;48;5;82mGo start docker so the rest of this doesnt get pissed..[0m' key
 # Setup X11 for docker
 brew install socat
 brew install Caskroom/cask/xquartz
