@@ -49,6 +49,9 @@ echo "Checking DNSMASQ..."
     exit 1
   fi
 
+# Set use local DNS resolver
+sudo networksetup -setdnsservers "Wi-Fi" 127.0.0.1
+
 echo "Checking DNSSEC..."
   dig_test=$(dig +dnssec icann.org|grep NOERROR)
   
